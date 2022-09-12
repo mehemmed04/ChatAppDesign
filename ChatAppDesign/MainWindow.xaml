@@ -1,0 +1,132 @@
+﻿<Window x:Class="ChatAppDesign.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChatAppDesign"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        Background="Transparent">
+    <Border CornerRadius="20"
+            Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="1.2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.ColumnSpan="2" >
+                <StackPanel Orientation="Horizontal" 
+                            HorizontalAlignment="Left"
+                            >
+                    <Image 
+                        Source="Images/telegram.png"
+                        Margin="9,4">
+
+                    </Image>
+                    <TextBlock
+                        FontWeight="ExtraBold"
+                        FontSize="20"
+                        Margin="5,10"
+                        >
+Telegram
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Right"
+                            Orientation="Horizontal">
+
+                    <Image 
+                        Source="Images/profpicture.png">
+
+                    </Image>
+                    <TextBlock
+                        FontWeight="Bold"
+                        FontSize="20"
+                        Margin="5,10,20,10"
+                        >
+Bayramov Mehemmed
+                    </TextBlock>
+                </StackPanel>
+
+            </Grid>
+            <Border Grid.Row="1"
+                    BorderThickness="0,1,1,1"
+                    BorderBrush="Black">
+                <Grid >
+                    <Image Source="Images/search.png"
+                           Width="30"
+                           Height="30"
+                           Margin="7"
+                           HorizontalAlignment="Left">
+
+                    </Image>
+                    <TextBox
+                    Margin="40,0,0,0"
+                    FontSize="20"
+                    VerticalContentAlignment="Center"
+                    FontWeight="Light"
+                    BorderThickness="0"
+                    >
+                        Search
+                    </TextBox>
+                </Grid>
+            </Border>
+
+
+
+            <Image Source="Images/profileInfo.png"
+                       Grid.Row="1"
+                   Grid.Column="1"
+                   Stretch="Fill">
+
+            </Image>
+            <Grid Grid.Row="2" Grid.RowSpan="2">
+
+                <Image Source="Images/ChatSection.png"
+                       Stretch="Fill"
+                       Margin="0,0,0,60">
+
+                </Image>
+
+            </Grid>
+
+            <Image Grid.Row="2"
+                  Grid.Column="1"
+                   Source="Images/messages.png"
+                   Stretch="Fill">
+                    
+            </Image>
+
+            <StackPanel Grid.Row="3"
+                  Grid.Column="1"
+                        Orientation="Horizontal">
+                <Image Source="Images/smile.png"
+                       Margin="7">
+
+                </Image>
+                <TextBox Width="500"
+                         FontSize="20"
+                         FontWeight="Light"
+                         VerticalContentAlignment="Center">
+Write a message ...
+                </TextBox>
+                <Image Source="Images/sendicon.jpg"
+                       Margin="7">
+
+                </Image>
+            </StackPanel>
+
+        </Grid>
+
+
+
+    </Border>
+</Window>
